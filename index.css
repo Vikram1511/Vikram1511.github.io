@@ -25,7 +25,7 @@ body{
       overflow: auto;
       background-color: #2C2D2F;
       padding: 20px;
-      color:#fff;
+      color:#fff !important;
   } 
   
   #image-banner{
@@ -118,7 +118,8 @@ body{
     text-decoration: none;
   }
   
-  a,a:focus,a:hover{
+  a{
+    all: revert;
     color:#fff2f29e;
   }
   

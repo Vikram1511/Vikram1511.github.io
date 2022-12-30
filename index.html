@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
@@ -14,7 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -37,7 +37,7 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          <embed src="Assignment4_report.pdf" frameborder="0" width="100%" height="400px">
+          <object data="Assignment4_report.pdf" type="application/pdf" frameborder="0" width="100%" height="100%"></object>
         </div>
         
         <!-- Modal footer -->
@@ -75,12 +75,12 @@
                    <li>
                     <a class="pageLink" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
                     </li>
-                  <li>
+                  <!-- <li>
                     <a class="pageLink"  href="#blogs"><i class="fa fa-book"></i> Blog</a>
-                  </li>
-                  <li>
+                  </li> -->
+                  <!-- <li>
                     <a class="pageLink" href="#contact"><i class="fa fa-address-card"></i> Contact</a>
-                  </li>
+                  </li> -->
                 </ul>
             </div>
             <div id="sidebarFooter">
@@ -118,12 +118,18 @@
                     </div>
                  </div>
                  <div class="col-lg-12 col-12 col-sm-12 col-md-12">
-                      <p id="aboutPara">Hi! I am Vikram Kumar,an under graduate from IIT Delhi, currently a full time Software Engineer at MagicBricks.</p>
+                      <p id="aboutPara">Hi! I am Vikram Kumar, graduated from IIT Delhi, currently a full time Software Engineer at MagicBricks with an experience of 3 years.</p>
                       <br>
-                      <p id="aboutPara">I have been interested in Data Science, computer vision and programming,
-                         i have done various academic projects in these domain(To know more about my projects please visit project tab).
-                        I am an active learner at MOOC.
+                      <p id="aboutPara">I have keen interest in Data Science, computer vision and software engineering,
+                         i have done various academic projects in these domain(To know more about my projects please visit <a href="#projects">here</a>).
                         </p>
+                      <p id="aboutPara">
+                        You can reach out to me at 
+                        <br>
+                        Email : vikramj021@gmail.com
+                        <br> 
+                        Contact Number : 8826082163
+                      </p>
                  </div>
               </div>
             </div>
@@ -156,7 +162,7 @@
                       <p>MagicBricks</p>
                     </div>
                     <div class="progress_description">
-                      <p>Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
+                      <p>Working on technolgies such as Spring Boot, Spring JPA, Spring Batch, Hibernate etc.  </p>
                     </div>
                   </div>
                   <div class="from_year">
@@ -181,8 +187,12 @@
                       <p>Indian Institute of Technology, Delhi</p>
                     </div>
                     <div class="progress_description">
-                      <p>Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
-                    </div>                  </div>
+                      <p>CGPA : 6.45</p>
+                    </div>   
+                    <div class="progress_description">
+                      <p>Courses : DSA, Digital Image Processing, Machine Learning, Econometric method etc.</p>
+                    </div>                  
+                  </div>
                   <div class="from_year">
                     <h6>2016</h6>
                   </div>
@@ -309,8 +319,8 @@
                       <div class="card-body">
                         <h5 class="card-title">Motion Capture Character Animation</h5>
                         <p class="card-text"></p>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >Project Report <i class='fa fa-file-pdf-o'></i></button>
-                        <a href="#" class="btn btn-primary" >Git <i class='fa fa-github'></i></a>
+                        <button  type="button" class="btn btn-primary" ><a href="https://github.com/Vikram1511/yoga-animation/blob/master/Readme.md" target="_blank">Project Report</a> <i class='fa fa-file-pdf-o'></i></button>
+                        <a href="https://github.com/Vikram1511/yoga-animation" target="_blank" class="btn btn-primary" >Git <i class='fa fa-github'></i></a>
                       </div>
                     </div>
 
@@ -319,8 +329,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Agriculture Production Statistical Analysis</h5>
                         <p class="card-text" ></p>
-                        <a href="#" class="btn btn-primary">Project Report</a>
-                        <a href="#" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
+                        <a href="AgriProd.pdf" target="_blank" class="btn btn-primary">Project Report</a>
                       </div>
                     </div>
     
@@ -329,8 +338,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Statistical Analysis of Fire Report Database</h5>
                       <p class="card-text" ></p>
-                      <a href="#" class="btn btn-primary">Project Report</a>
-                      <a href="#" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
+                      <a href="BTP_Report_Vikram_Kumar.pdf" target="_blank" class="btn btn-primary">Project Report</a>
                     </div>
                   </div>
                   
@@ -346,9 +354,8 @@
                     <img class="card-img-top" src="neural_net.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Implementation of Neural Network from scratch</h5>
-                        <p class="card-text" >With supporting text below as a </p>
-                        <a href="#" class="btn btn-primary">Project Report</a>
-                        <a href="#" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
+                        <a href="https://github.com/Vikram1511/COL341_IITD/blob/master/assignment2/2016ce10237_vikramkumar.pdf" target="_blank" class="btn btn-primary">Project Report</a>
+                        <a href="https://github.com/Vikram1511/COL341_IITD/tree/master/assignment2" target="_blank" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
                       </div>
                   </div>
     
@@ -362,8 +369,8 @@
                       <div class="card-body">
                         <h5 class="card-title">Robust Form processing</h5>
                         <p class="card-text" ></p>
-                        <a href="#" class="btn btn-primary">Project Report</a>
-                        <a href="#" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
+                        <a href="https://github.com/Vikram1511/Robust_Form_processing/blob/master/Assignment4.pdf" target="_blank" class="btn btn-primary">Project Report</a>
+                        <a target="_blank" href="https://github.com/Vikram1511/Robust_Form_processing" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
                       </div>
                   </div>
     
@@ -372,7 +379,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Haar Wavelets and Image pyramids</h5>
                       <p class="card-text" ></p>
-                      <a href="#" class="btn btn-primary">Project Report</a>
+                      <a href="Assignment4_report.pdf" target="_blank" class="btn btn-primary">Project Report</a>
                       <a href="#" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
                     </div>
                   </div>
@@ -382,8 +389,8 @@
                     <div class="card-body">
                       <h5 class="card-title">Texture Synthesis</h5>
                       <p class="card-text" ></p>
-                      <a href="#" class="btn btn-primary">Project Report</a>
-                      <a href="#" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
+                      <a href="https://github.com/Vikram1511/TextureSynthesis/blob/master/Assignment5.pdf" target="_blank" class="btn btn-primary">Project Report</a>
+                      <a href="https://github.com/Vikram1511/TextureSynthesis" target="_blank" class="btn btn-primary">Git <i class='fa fa-github'></i></a>
                     </div>
                   </div>
                 </div>
@@ -462,6 +469,7 @@
   <script src="jquery.min.js"></script>
   <script src="plugin.min.js"></script>
   <script src="index.js"></script>
+  
 
 </body>
 </html>
