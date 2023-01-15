@@ -19,6 +19,27 @@ function openPage(e){
     // }
 }
 
+function jumpToPage(id){
+    if (!window.matchMedia('screen and (max-width: 768px)').matches) {
+            if(document.querySelector('#navlist a.active')!=null){
+                const elem = document.querySelector('#navlist a.active');
+                elem.classList.remove('active')
+                var prevIdName = elem.getAttribute("href")
+                $(prevIdName).css("display","none");
+
+            }
+            $(id).addClass('active');
+            var triggeredPageId = document.querySelector("#navlist a.active").getAttribute("href");
+            // $(triggeredPageId).css("display","block");
+            $(triggeredPageId).fadeIn(2000)
+    }else{
+        $('.sidebar-wrapper').toggleClass('on');
+    }
+    
+
+// }
+}
+
 function openProjects(e){
     // if(e.getAttribute!=null){
     if(document.querySelector('#projectNavList a.active')!=null){

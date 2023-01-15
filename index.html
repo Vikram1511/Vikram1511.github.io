@@ -74,16 +74,16 @@
             <div class="navbar-wrapper">
                 <ul onclick=openPage(event) id="navlist">
                  <li>
-                    <a class="active pageLink" href="#home"><i class="fa fa-home"></i> Home</a>
+                    <a class="active pageLink" href="#home" id="navHome"><i class="fa fa-home"></i> Home</a>
                   </li>
                   <li>
-                    <a  class="pageLink" href="#about"><i class="fa fa-user-o"></i> About Me</a>
+                    <a  class="pageLink" href="#about" id="navAbout"><i class="fa fa-user-o"></i> About Me</a>
                   </li>
                   <li>
-                  <a class="pageLink" href="#resume"><i class="fa fa-briefcase"></i> Resume</a>
+                  <a class="pageLink" href="#resume" id="navResume"><i class="fa fa-briefcase"></i> Resume</a>
                   </li>
                    <li>
-                    <a class="pageLink" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
+                    <a class="pageLink" href="#projects" id="navProjects"><i class="fa fa-tasks"></i> Projects</a>
                     </li>
                   <!-- <li>
                     <a class="pageLink"  href="#blogs"><i class="fa fa-book"></i> Blog</a>
@@ -110,6 +110,7 @@
             <div class="title-container">
                 <h1 id="firstWord">Vikram</h1><h1 id="secondWord"> Kumar </h1>
                 <p id="designation-conatiner"> <span id="greet">I am a </span><span id="designation">Software Engineer</span></p>
+                <button onclick="jumpToPage('#navAbout');" class="btn btn-info">Know More</button>
             </div>
         </div>
         <div id="about">
@@ -125,7 +126,7 @@
                       <p id="aboutPara">Hi! I am Vikram Kumar, graduated from IIT Delhi, currently a full time Software Engineer at MagicBricks with an experience of 2+ years.</p>
                       <br>
                       <p id="aboutPara">I have keen interest in Data Science, computer vision and software engineering,
-                         i have done various academic projects in these domain (visit project section from menu bar to know more).
+                         i have done various academic projects in these domain (visit project section).
                         </p>
                       <p id="aboutPara">
                         You can reach out to me at 
