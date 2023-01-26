@@ -10,11 +10,11 @@ function openPage(e){
             $(prevIdName).css("display","none");
 
         }
-        e.target.className='active';
+        $(e.target).addClass('active');
         console.log(e)
         var triggeredPageId = document.querySelector("#navlist a.active").getAttribute("href");
         // $(triggeredPageId).css("display","block");
-        $(triggeredPageId).fadeIn(2000)
+        $(triggeredPageId).fadeIn(500)
         $('.sidebar-wrapper').toggleClass('on');
     // }
 }
@@ -36,7 +36,7 @@ function jumpToPage(id){
             }
             $('a[href="'+id+'"]').addClass('active');
             // $(triggeredPageId).css("display","block");
-            $(id).fadeIn(2000)
+            $(id).fadeIn(500)
     // }else{
     //     $('.sidebar-wrapper').toggleClass('on');
     // }
