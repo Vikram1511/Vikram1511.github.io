@@ -19,6 +19,12 @@ function openPage(e){
     // }
 }
 
+function toTitleCase(str) {
+  return str.replace(/(?:^|\s)\w/g, function(match) {
+      return match.toUpperCase();
+  });
+}
+
 function jumpToPage(id){
     // if (!window.matchMedia('screen and (max-width: 768px)').matches) {
             if(document.querySelector('#navlist a.active')!=null){
@@ -28,7 +34,7 @@ function jumpToPage(id){
                 $(prevIdName).css("display","none");
 
             }
-            $(id).addClass('active');
+            $('a[href="'+id+'"]').addClass('active');
             // $(triggeredPageId).css("display","block");
             $(id).fadeIn(2000)
     // }else{
